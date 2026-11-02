@@ -1,0 +1,168 @@
+import type { Sitrep } from "@/lib/types";
+
+export const sitreps: Sitrep[] = [
+  {
+    slug: "borno-flood-sitrep-07",
+    number: 7,
+    title: "Borno Flood Emergency — Situation Report #7",
+    appealSlug: "borno-flood-response-2026",
+    urgency: "critical",
+    location: "Maiduguri & Jere LGAs, Borno",
+    publishedAt: "2026-10-28T09:40:00+01:00",
+    period: "26–28 October 2026",
+    summary:
+      "Water levels are receding in Gwange and Fori but remain above 1.2m in parts of Bulabulin. 14 displacement sites now host an estimated 96,000 people. Suspected cholera cases reported at two sites; mobile health teams deployed.",
+    author: "Hauwa Kachalla, Emergency Coordinator (Borno)",
+    figures: [
+      { label: "People affected", value: "412,000", change: "+18,000" },
+      { label: "People displaced", value: "96,000", change: "+4,200" },
+      { label: "Displacement sites", value: "14", change: "+2" },
+      { label: "People reached by URN", value: "87,450", change: "+21,300" },
+      { label: "Suspected AWD/cholera cases", value: "63", change: "+41" },
+      { label: "Water delivered (litres/day)", value: "120,000", change: "+45,000" },
+    ],
+    needs: [
+      { sector: "Food", need: 96_000, reached: 52_400, unit: "people" },
+      { sector: "Water (WASH)", need: 96_000, reached: 61_800, unit: "people" },
+      { sector: "Shelter / NFI", need: 16_000, reached: 4_100, unit: "households" },
+      { sector: "Health", need: 40_000, reached: 9_300, unit: "consultations" },
+      { sector: "Protection", need: 12_000, reached: 2_650, unit: "children" },
+    ],
+    entries: [
+      { time: "2026-10-28T08:55:00+01:00", location: "Bulabulin", text: "Mobile health team 2 screened 640 people; 21 suspected AWD cases referred to State Specialist Hospital. ORS distributed to 210 households." },
+      { time: "2026-10-27T18:30:00+01:00", location: "Gwange Primary School", text: "Latrine block (12 stances) completed with Borno RUWASSA. Site population stable at ~7,800." },
+      { time: "2026-10-27T13:10:00+01:00", location: "Warehouse, Baga Road", text: "Second consignment received: 3,000 food parcels and 1,500 hygiene kits from the Kano logistics hub." },
+      { time: "2026-10-26T21:45:00+01:00", location: "Fori", text: "Water level down to 0.6m. Boat team 3 redeployed to Bulabulin. 340 people evacuated to higher ground." },
+      { time: "2026-10-26T10:00:00+01:00", location: "Coordination", text: "Joint assessment with NEMA, SEMA and UN OCHA. URN leads WASH sub-sector at 5 sites." },
+    ],
+    gaps: [
+      "Shelter kits: only 26% of displaced households covered. Harmattan begins in 3–4 weeks.",
+      "Latrine coverage at 1:68 people against Sphere standard of 1:20.",
+      "No dedicated menstrual hygiene supplies at 9 of 14 sites.",
+    ],
+    nextUpdate: "2026-10-31T10:00:00+01:00",
+  },
+  {
+    slug: "borno-flood-sitrep-06",
+    number: 6,
+    title: "Borno Flood Emergency — Situation Report #6",
+    appealSlug: "borno-flood-response-2026",
+    urgency: "critical",
+    location: "Maiduguri & Jere LGAs, Borno",
+    publishedAt: "2026-10-25T10:00:00+01:00",
+    period: "23–25 October 2026",
+    summary:
+      "Flood water reached peak extent on 23 October. URN scaled water trucking to 75,000 litres/day and completed the first 5,000 food parcel distributions.",
+    author: "Hauwa Kachalla, Emergency Coordinator (Borno)",
+    figures: [
+      { label: "People affected", value: "394,000", change: "+60,000" },
+      { label: "People displaced", value: "91,800", change: "+12,300" },
+      { label: "Displacement sites", value: "12" },
+      { label: "People reached by URN", value: "66,150", change: "+38,900" },
+    ],
+    needs: [
+      { sector: "Food", need: 91_800, reached: 30_000, unit: "people" },
+      { sector: "Water (WASH)", need: 91_800, reached: 38_500, unit: "people" },
+      { sector: "Shelter / NFI", need: 15_300, reached: 1_200, unit: "households" },
+    ],
+    entries: [
+      { time: "2026-10-25T07:30:00+01:00", location: "1000 Housing Estate", text: "Food parcel distribution completed for 1,850 households using NEMA biometric lists." },
+      { time: "2026-10-24T15:00:00+01:00", location: "Shehu's Palace grounds", text: "Hot meal service ended; site transitioned to dry rations." },
+      { time: "2026-10-23T22:15:00+01:00", location: "Gwange", text: "Peak water level recorded at 2.1m. Boat teams completed 64 evacuation trips." },
+    ],
+    gaps: ["Shelter kits pipeline delayed by road access on the Kano–Maiduguri corridor."],
+    nextUpdate: "2026-10-28T10:00:00+01:00",
+  },
+  {
+    slug: "adamawa-cholera-sitrep-04",
+    number: 4,
+    title: "Adamawa Cholera Response — Situation Report #4",
+    appealSlug: "adamawa-cholera-outbreak",
+    urgency: "critical",
+    location: "Yola North, Mubi South & Girei, Adamawa",
+    publishedAt: "2026-10-27T17:00:00+01:00",
+    period: "20–27 October 2026",
+    summary:
+      "New suspected cases fell 12% week-on-week in Yola North but rose sharply in Mubi South. Case fatality rate across URN-supported sites is 0.8%, below the 1% emergency threshold.",
+    author: "Dr. Ibrahim Waziri, Health Lead",
+    figures: [
+      { label: "Suspected cases (state)", value: "2,912", change: "+388" },
+      { label: "Deaths (state)", value: "61", change: "+7" },
+      { label: "Case fatality rate (URN sites)", value: "0.8%" },
+      { label: "Oral Rehydration Points", value: "14", change: "+3" },
+      { label: "Wells chlorinated", value: "620", change: "+190" },
+    ],
+    needs: [
+      { sector: "Hygiene kits", need: 30_000, reached: 11_200, unit: "households" },
+      { sector: "Case management", need: 3_500, reached: 1_880, unit: "patients" },
+      { sector: "Risk communication", need: 185_000, reached: 98_000, unit: "people" },
+    ],
+    entries: [
+      { time: "2026-10-27T11:20:00+01:00", location: "Mubi South", text: "Three new ORPs opened at Lokuwa, Kolere and Mubi central market." },
+      { time: "2026-10-24T09:00:00+01:00", location: "Yola North", text: "Second chlorination round completed; free residual chlorine within range at 92% of sampled wells." },
+    ],
+    gaps: ["Oral cholera vaccine campaign awaiting ICG approval.", "Hygiene kit coverage at 37% of target."],
+    nextUpdate: "2026-11-03T17:00:00+01:00",
+  },
+  {
+    slug: "benue-displacement-sitrep-03",
+    number: 3,
+    title: "Benue Displacement — Situation Report #3",
+    appealSlug: "benue-displacement-emergency",
+    urgency: "high",
+    location: "Guma, Agatu & Makurdi, Benue",
+    publishedAt: "2026-10-22T12:00:00+01:00",
+    period: "1–22 October 2026",
+    summary:
+      "Arrivals slowed in October but camp populations remain 40% above planned capacity. Shelter kit distribution at Abagena completed ahead of harmattan.",
+    author: "Terkula Iorliam, Field Office Lead (Makurdi)",
+    figures: [
+      { label: "People displaced", value: "64,000", change: "+3,100" },
+      { label: "Camps & host sites", value: "9" },
+      { label: "People reached by URN", value: "31,800", change: "+5,600" },
+      { label: "Children in safe spaces", value: "2,400", change: "+800" },
+    ],
+    needs: [
+      { sector: "Shelter / NFI", need: 10_600, reached: 4_350, unit: "households" },
+      { sector: "Food", need: 64_000, reached: 28_000, unit: "people" },
+      { sector: "Protection", need: 9_000, reached: 2_400, unit: "children" },
+    ],
+    entries: [
+      { time: "2026-10-22T09:00:00+01:00", location: "Abagena camp", text: "1,200 shelter kits distributed. Site planning with SEMA to decongest Block C." },
+      { time: "2026-10-08T14:00:00+01:00", location: "Daudu", text: "Family tracing reunited 46 separated children with relatives." },
+    ],
+    gaps: ["No secondary education options for adolescents in camps."],
+    nextUpdate: "2026-11-05T12:00:00+01:00",
+  },
+  {
+    slug: "ne-food-security-sitrep-02",
+    number: 2,
+    title: "North-East Food Security — Situation Report #2",
+    appealSlug: "north-east-lean-season-food",
+    urgency: "high",
+    location: "Damaturu, Geidam & Gujba, Yobe",
+    publishedAt: "2026-10-16T10:00:00+01:00",
+    period: "September – mid-October 2026",
+    summary:
+      "Third cash-transfer round completed for 8,400 households. Global acute malnutrition among screened children is 11.2%, above the 10% 'serious' threshold.",
+    author: "Zainab Lawan, Food Security & Livelihoods Manager",
+    figures: [
+      { label: "People in IPC Phase 3+", value: "4.4m" },
+      { label: "Households receiving cash", value: "8,400", change: "+1,900" },
+      { label: "Children screened", value: "18,000" },
+      { label: "GAM rate (screened)", value: "11.2%" },
+    ],
+    needs: [
+      { sector: "Cash transfers", need: 15_000, reached: 8_400, unit: "households" },
+      { sector: "Therapeutic feeding", need: 3_200, reached: 2_010, unit: "children" },
+    ],
+    entries: [
+      { time: "2026-10-15T16:00:00+01:00", location: "Geidam", text: "Cash round 3 completed via mobile money; 97% of recipients confirmed receipt in post-distribution calls." },
+      { time: "2026-09-12T10:00:00+01:00", location: "Gujba", text: "Mass MUAC screening completed in 31 communities." },
+    ],
+    gaps: ["RUTF pipeline covers only 6 more weeks."],
+    nextUpdate: "2026-11-14T10:00:00+01:00",
+  },
+];
+
+export const getSitrep = (slug: string) => sitreps.find((s) => s.slug === slug);

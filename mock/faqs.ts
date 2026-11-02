@@ -1,0 +1,17 @@
+import type { Faq } from "@/lib/types";
+
+export const faqs: Faq[] = [
+  { category: "Donations", q: "How quickly does my gift reach people in a crisis?", a: "Gifts to an active emergency appeal are allocated to that response within 7 days. Gifts to the Rapid Response Fund can be released within hours of an alert — often before a public appeal exists." },
+  { category: "Donations", q: "What's the difference between an appeal gift and the Rapid Response Fund?", a: "An appeal gift is restricted to one emergency. The Rapid Response Fund is unrestricted: it lets us pre-position stock and deploy teams the moment disaster strikes, then move money to wherever needs are greatest." },
+  { category: "Donations", q: "What happens if an appeal is over-funded?", a: "We will tell you. Surplus funds are moved to the closest related need (for example, flood recovery in the same state) or to the Rapid Response Fund — never to unrelated overheads." },
+  { category: "Donations", q: "Can I give relief items instead of money?", a: "You can fund specific items through our Build a Relief Kit page. We don't usually accept physical donations from individuals — buying in bulk close to the crisis is faster and supports local markets. Corporate in-kind offers are welcome via our partnerships team." },
+  { category: "Donations", q: "Which payment methods do you accept?", a: "Card (Visa, Mastercard, Verve), bank transfer to our Zenith Bank emergency account, USSD, and USD transfers to our domiciliary account for diaspora donors." },
+  { category: "Tax & receipts", q: "Will I get a receipt?", a: "Yes. An instant receipt is emailed for every online gift. Bank transfer and USSD donors receive a receipt within 2 working days once the transfer reference is matched." },
+  { category: "Tax & receipts", q: "Is my donation tax-deductible?", a: "Ubuntu Relief Network is registered with the CAC as incorporated trustees. Companies may be able to deduct donations under Section 25 of the Companies Income Tax Act, subject to its conditions. Please consult your tax adviser." },
+  { category: "Tax & receipts", q: "Can my company get a consolidated annual statement?", a: "Yes — email our partnerships team and we'll issue a consolidated statement of all gifts and matched donations for your financial year." },
+  { category: "Refunds", q: "I made a mistake with my donation. Can I get a refund?", a: "Contact us within 14 days with your receipt reference and we'll refund errors in full. After 14 days funds may already be spent in the field." },
+  { category: "Refunds", q: "How do I change or cancel my monthly gift?", a: "Reply to any receipt email or call our supporter care line. Changes take effect from the next billing date — no questions asked." },
+  { category: "Operations", q: "Do you work with government agencies?", a: "We coordinate with NEMA, State Emergency Management Agencies and the UN cluster system to avoid duplication, but we are independent and non-partisan." },
+  { category: "Operations", q: "How do you make sure aid reaches the right people?", a: "Joint registration with NEMA/SEMA, community committees, help desks at every distribution, a free complaints hotline and post-distribution monitoring calls." },
+  { category: "Volunteering", q: "Can I volunteer in the field?", a: "Field deployment requires completed training and a place on our standby roster. Anyone can volunteer at our Lagos and Abuja kit-packing days — no experience needed." },
+];
